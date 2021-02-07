@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "roboto";
+  font-family: Roboto, sans-serif;
 }
 
 .list {
@@ -26,7 +26,7 @@ body {
 }
 
 .web {
-  font-family: "Raleway";
+  font-family: "Raleway", Roboto, sans-serif;
   font-size: 26px;
   font-style: normal;
   line-height: 1.38;
@@ -36,13 +36,17 @@ body {
 }
 
 .studio {
-  font-family: "Raleway";
+  font-family: "Raleway", Roboto, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.03em;
   color: var(--txt-c-dark);
+}
+
+.studio.footer {
+  color: var(--bgc-white);
 }
 
 /* *logo */
@@ -74,18 +78,19 @@ body {
 /* *hero */
 .hero-title {
   color: var(--txt-c-white);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
   color: var(--txt-c-white);
   background-color: var(--bgc-accent);
   border: none;
-  font-family: "roboto";
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16;
   line-height: 1.88;
@@ -93,13 +98,26 @@ body {
 }
 
 /* *section */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section-title,
 .section-item {
   color: var(--txt-c-grey);
 }
 
 .section-title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -150,12 +168,13 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
 }
+
 /* !portfolio */
 .filter-btn {
   color: var(--txt-c-grey);
   background-color: var(--bgc-dark);
   border: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -166,7 +185,7 @@ body {
   color: var(--txt-c-white);
   background-color: var(--bgc-accent);
   border: none;
-  font-family: "roboto";
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16;
   line-height: 1.62;
@@ -180,6 +199,7 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
 }
+
 .projects .project-type {
   color: var(--txt-c-grey-light);
   font-size: 16px;

@@ -1,22 +1,26 @@
 :root {
-  --bgc-white: #ffffff;
+  --bgc-main: #ffffff;
   --bgc-dark: #f5f4fa;
   --bgc-light: #e5e5e5;
   --bgc-accent: #2196f3;
+  --bgc-hero-footer: #2f303a;
 
   /* text */
   --txt-c-dark: #000000;
   --txt-c-grey: #212121;
   --txt-c-grey-light: #757575;
-  --txt-c-accent: var(--bgc-accent);
+  --txt-c-accent: #2196f3;
   --txt-c-address: rgba(255, 255, 255, 0.6);
-  --txt-c-white: var(--bgc-white);
+  --txt-c-light: #ffffff;
 }
 
 body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 .list {
   list-style: none;
 }
@@ -25,7 +29,11 @@ body {
   text-decoration: none;
 }
 
-.web {
+.pointer {
+  cursor: pointer;
+}
+
+.logo {
   font-family: "Raleway", Roboto, sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -46,14 +54,14 @@ body {
 }
 
 .studio.footer {
-  color: var(--bgc-white);
+  color: var(--bgc-main);
 }
 
 /* *logo */
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
   color: var(--txt-c-accent);
-}
+} */
 
 /* *site-nav */
 .site-nav .link {
@@ -68,6 +76,8 @@ body {
   color: var(--txt-c-grey-light);
 }
 
+.logo:hover,
+.logo:focus,
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
@@ -76,8 +86,11 @@ body {
 }
 
 /* *hero */
+.hero {
+  background-color: var(--bgc-hero-footer);
+}
 .hero-title {
-  color: var(--txt-c-white);
+  color: var(--txt-c-light);
   font-family: Roboto, sans-serif;
   font-size: 44px;
   font-weight: 900;
@@ -87,7 +100,7 @@ body {
 }
 
 .button {
-  color: var(--txt-c-white);
+  color: var(--txt-c-light);
   background-color: var(--bgc-accent);
   border: none;
   font-family: Roboto, sans-serif;
@@ -160,8 +173,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* footer */
+
+.footer {
+  background-color: var(--bgc-hero-footer);
+}
 .auth-nav .adres {
-  color: var(--bgc-white);
+  color: var(--bgc-main);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -182,7 +200,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--txt-c-white);
+  color: var(--txt-c-grey-light);
   background-color: var(--bgc-accent);
   border: none;
   font-family: Roboto, sans-serif;
